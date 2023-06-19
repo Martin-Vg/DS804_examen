@@ -6,7 +6,9 @@ def buscadorSuma(lista: [], numero: int):
             # if (dato>numero): # si nuestro numero es mayor no habra suma que nos de el resultado si la funcion le no le daremos numeros negativos descomentar
             #    break
             
-            if(dato+lista[i1+i2]==numero):# revisamos si la suma da el numero que buscamos y mandamos los indices
-                return ((i1, i1+i2))
+            if(dato+lista[i1+i2+1]==numero):# revisamos si la suma da el numero que buscamos y mandamos los indices
+                return ((i1, i1+i2+1))
     
     return (())# regresamos una tupla vacia si no se encuentra la suma
+
+print(buscadorSuma([5,8,5,5,6], 10))
